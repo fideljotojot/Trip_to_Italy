@@ -2,7 +2,8 @@
 export default {
   data() {
     return {
-      confirm: false
+      confirm: false,
+      ask: false
     }
   },
   methods: {
@@ -18,17 +19,14 @@ export default {
   <div class="page-wrapper">
     <transition name="content">
       <div class="login-page" v-if="!confirm">
-        <header>
-          <div class="logo">
-            <img src="../assets/images/logo.png" alt="Logo" />
-          </div>
-
-          <button @click="confirmUser" class="wrapper">Explore</button>
-        </header>
         <!-- Arrow button (bottom center) that also navigates to the confirmation page -->
         <button @click="confirmUser" class="arrow-btn" aria-label="Go to confirmation">
-          <img src="../assets/images/curved-arrow.png" alt="Next">
+          <span class="arrow-mark" aria-hidden="true"></span>
         </button>
+
+        <i class="fi fi-rr-interrogation help-icon" aria-hidden="true" @click="ask = true"></i>
+
+        <div v-if="ask"></div>
       </div>
     </transition>
   </div>
@@ -87,37 +85,46 @@ header {
 
 .arrow-btn {
   position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-}
-
-.arrow-btn img {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translateX(-50%) rotate(30deg);
   width: 5.6em;
-  height: auto;
-  padding: 0.5em;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 50%;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.12) inset;
-  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35)) brightness(1.08) contrast(1.25) saturate(1.15);
+  height: 5.6em;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+  padding: 0;
+  margin: 0;
+  transition: transform 220ms ease, box-shadow 220ms ease;
   animation: pulse 3s ease-in-out infinite;
 }
 
-.arrow-btn:hover img {
-  transform: translateX(-50%) translateY(-6px) rotate(30deg) scale(1.06);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.18) inset;
-  animation-play-state: paused;
+.arrow-mark {
+  position: absolute;
+  top: 380%;
+  left: 425%;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/love-arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  filter: invert(1) sepia(0.50) saturate(7) hue-rotate(3deg) brightness(.93) contrast(1);
 }
 
+
 @keyframes pulse {
-  0% { transform: translateX(-50%) rotate(30deg) scale(1); }
-  50% { transform: translateX(-50%) rotate(30deg) scale(1.03); }
-  100% { transform: translateX(-50%) rotate(30deg) scale(1); }
+  0% { transform: translate(-50%) scale(1); }
+  50% { transform: translate(-50%) scale(1.05); }
+  100% { transform: translate(-50%) scale(1); }
+}
+
+.help-icon {
+  position: fixed;
+  right: 1.25em;
+  bottom: 1.25em;
+  font-size: 1.5em;
+  line-height: 1;
+  color: #fff;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
+  cursor: pointer;
+  z-index: 10;
 }
 </style>
