@@ -10,10 +10,10 @@ export default {
 
 <template>
     <main>
-        <header>Welcome, dear {{ user }}</header>
         <section class="sidebar">
+            <header>Welcome, dear {{ user }}</header>
             <ul>
-                <li>Amalfi and Campania</li>
+                <li>Amalfi</li>
                 <li>Calabria</li>
                 <li>Liguria</li>
                 <li>Pugulia</li>
@@ -21,6 +21,9 @@ export default {
                 <li>Sicilia</li>
                 <li>Toscana</li>
             </ul>
+        </section>
+        <section>
+            <RouterLink/>
         </section>
     </main>
 </template>
