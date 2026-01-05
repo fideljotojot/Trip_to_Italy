@@ -2,7 +2,8 @@
 export default {
     data() {
         return {
-            user: 'Beatrix'
+            user: 'Beatrix',
+            pages: ['Amalfi Coast' ,'Calabria','Liguria','Pugulia','Sardania','Sicilia','Toscana']
         }
     }
 }
@@ -13,13 +14,9 @@ export default {
         <section class="sidebar">
             <header>Welcome, dear {{ user }}</header>
             <ul>
-                <li>Amalfi</li>
-                <li>Calabria</li>
-                <li>Liguria</li>
-                <li>Pugulia</li>
-                <li>Sardania</li>
-                <li>Sicilia</li>
-                <li>Toscana</li>
+                <li v-for="page in pages" :key="page">
+                    {{ page }}
+                </li>
             </ul>
         </section>
         <section>
@@ -32,5 +29,32 @@ export default {
 main {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: clamp(200px, 15%, 400px);
+    height: 100vh;
+    background-color: rgb(10, 61, 98, 41%);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 0;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    gap: 4em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.sidebar ul li {
+    font-weight: bold;
+    font-size: 1.25;
 }
 </style>
