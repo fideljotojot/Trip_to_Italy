@@ -10,8 +10,28 @@ export default {
                     { name: 'Marina', src: '@/assets/images/Italy/amalfi coast and campania/marina.jpg' }
                 ],
                 'Calabria' : [
-                    {name: 'Tropea', src: '@/assests/images/Italy/calabria/Vibo-Valentia.jpg'}
-                ]
+                    { name: 'Tropea', src: '@/assests/images/Italy/calabria/Vibo-Valentia.jpg' }
+                ],
+                'Liguria' : [
+                    { name: 'Monterosso', src: '@/assets/images/Italy/liguria/monterosso/Monterosso beach.jpg' },
+                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/liguria/baia_del_silenzio_Sestri_Levante.jpeg' }
+                ],
+                'Puglia' : [
+                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
+                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
+                ],
+                'Sardania' : [
+                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
+                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
+                ],
+                'Sicily' : [
+                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
+                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
+                ],
+                'Toscana' : [
+                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
+                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
+                ],
             }
         }
     }
