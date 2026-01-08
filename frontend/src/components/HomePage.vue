@@ -1,79 +1,117 @@
 <script>
-import amalfiImg from '@/assets/images/Italy/amalfi coast and campania/faraglioni.jpg'
-import calabriaImg from '@/assets/images/Italy/calabria/Vibo-Valentia.jpg'
-import liguriaImg from '@/assets/images/Italy/liguria/monterosso/Monterosso beach.jpg'
-import pugliaImg from '@/assets/images/Italy/puglia/Punta Prosciutto.jpg'
-import sardaniaImg from '@/assets/images/Italy/puglia/Punta Prosciutto.jpg'
-import siciliaImg from '@/assets/images/Italy/puglia/Punta Prosciutto.jpg'
-import toscanaImg from '@/assets/images/Italy/puglia/Punta Prosciutto.jpg'
+import faraglioniImg from '@/assets/images/Italy/amalfi coast and campania/faraglioni.jpg'
+import marinaImg from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota.jpg'
+import tropeaImg from '@/assets/images/Italy/calabria/Vibo-Valentia.jpg'
+import monterossoBeachImg from '@/assets/images/Italy/liguria/monterosso/Monterosso beach.jpg'
+import monterossoSunsetImg from '@/assets/images/Italy/liguria/monterosso/Monterosso-Al-Mare.jpg'
+import baiaSilenzioLiguriaImg from '@/assets/images/Italy/liguria/monterosso/Cinque-Terre-La-Spezia-Province.webp'
+import puntaProscuttoImg from '@/assets/images/Italy/puglia/Punta Prosciutto.jpg'
+import toreSantAndreaImg from '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg'
 
 export default {
     data() {
         return {
             user: 'Beatrix',
-            selectedPage: 'Amalfi Coast',
-            pages: ['Amalfi Coast' ,'Calabria','Liguria','Pugulia','Sardania','Sicilia','Toscana'],
-            backgroundImages: {
-                'Amalfi Coast': amalfiImg,
-                'Calabria': calabriaImg,
-                'Liguria': liguriaImg,
-                'Pugulia': pugliaImg,
-                'Sardania': sardaniaImg,
-                'Sicilia': siciliaImg,
-                'Toscana': toscanaImg,
-            },
-            images: {
-                'Amalfi Coast': [
-                    { name: 'Faraglioni', src: '@/assets/images/Italy/amalfi coast and campania/faraglioni.jpg' },
-                    { name: 'Marina', src: '@/assets/images/Italy/amalfi coast and campania/marina.jpg' }
-                ],
-                'Calabria' : [
-                    { name: 'Tropea', src: '@/assests/images/Italy/calabria/Vibo-Valentia.jpg' }
-                ],
-                'Liguria' : [
-                    { name: 'Monterosso', src: '@/assets/images/Italy/liguria/monterosso/Monterosso beach.jpg' },
-                    { name: 'Monterosso', src: '@/assets/images/Italy/liguria/monterosso/Monterosso sunset.jpg' },
-                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/liguria/baia_del_silenzio_Sestri_Levante.jpeg' }
-                ],
-                'Puglia' : [
-                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
-                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
-                ],
-                'Sardania' : [
-                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
-                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
-                ],
-                'Sicily' : [
-                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
-                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
-                ],
-                'Toscana' : [
-                    { name: 'Punta Proscuitto', src: '@/assets/images/Italy/puglia/Punta Prosciutto.jpg' },
-                    { name: 'Baia del Silenzio', src: '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg' }
-                ],
+            selectedPage: 'Italy',
+            selectedRegion: 'Amalfi Coast',
+            selectedBeach: 'Faraglioni',
+            selectedImage: faraglioniImg,
+            regions: {
+                'Italy': [
+                    {
+                        name: 'Amalfi Coast',
+                        beaches: [
+                            { name: 'Faraglioni', images: [faraglioniImg] },
+                            { name: 'Marina di Camerota', images: [marinaImg] }
+                        ]
+                    },
+                    {
+                        name: 'Calabria',
+                        beaches: [
+                            { name: 'Tropea', images: [tropeaImg] }
+                        ]
+                    },
+                    {
+                        name: 'Liguria',
+                        beaches: [
+                            { name: 'Monterosso', images: [monterossoBeachImg, monterossoSunsetImg] },
+                            { name: 'Cinque Terre', images: [baiaSilenzioLiguriaImg] }
+                        ]
+                    },
+                    {
+                        name: 'Puglia',
+                        beaches: [
+                            { name: 'Punta Prosciutto', images: [puntaProscuttoImg] },
+                            { name: 'Torre Sant\'Andrea', images: [toreSantAndreaImg] }
+                        ]
+                    },
+                    {
+                        name: 'Sardania',
+                        beaches: [
+                            { name: 'Punta Prosciutto', images: [puntaProscuttoImg] },
+                            { name: 'Baia del Silenzio', images: [toreSantAndreaImg] }
+                        ]
+                    },
+                    {
+                        name: 'Sicilia',
+                        beaches: [
+                            { name: 'Mondello', images: [puntaProscuttoImg] },
+                            { name: 'Mondello Sunset', images: [toreSantAndreaImg] }
+                        ]
+                    },
+                    {
+                        name: 'Toscana',
+                        beaches: [
+                            { name: 'Follonica', images: [puntaProscuttoImg] },
+                            { name: 'Marina di Grosseto', images: [toreSantAndreaImg] }
+                        ]
+                    }
+                ]
             }
         }
     },
     methods: {
-        getBackgroundImage() {
-            return this.backgroundImages[this.selectedPage];
+        getRegions() {
+            return this.regions[this.selectedPage] || [];
+        },
+        getBeaches() {
+            if (!this.selectedRegion) return [];
+            const region = this.getRegions().find(r => r.name === this.selectedRegion);
+            return region ? region.beaches : [];
+        },
+        getImages() {
+            if (!this.selectedBeach) return [];
+            const beaches = this.getBeaches();
+            const beach = beaches.find(b => b.name === this.selectedBeach);
+            return beach ? beach.images : [];
         }
     }
 }
 </script>
 
 <template>
-    <main :style="{ backgroundImage: `url('${getBackgroundImage()}')`, backgroundSize: 'cover', backgroundPosition: 'center' }">
+    <main :style="{ backgroundImage: this.selectedImage ? `url('${this.selectedImage}')` : 'none', backgroundSize: 'cover', backgroundPosition: 'center' }">
         <section class="sidebar">
-            <header>Welcome, dear {{ user }}</header>
+            <header>Welcome, dear <span>{{ user }}</span></header>
             <ul>
-                <li v-for="page in pages" :key="page" @click="selectedPage = page" :class="{ active: selectedPage === page }">
-                    {{ page }}
+                <li v-for="region in getRegions()" 
+                :key="region.name" 
+                @click="selectedRegion = region.name; 
+                selectedBeach = region.beaches && region.beaches.length > 0 ? region.beaches[0].name : null; 
+                selectedImage = region.beaches && region.beaches.length > 0 && region.beaches[0].images && region.beaches[0].images.length > 0 
+                            ? region.beaches[0].images[0] : null;" 
+                :class="{ active: selectedRegion === region.name }">
+                    {{ region.name }}
                 </li>
             </ul>
         </section>
-        <section>
-            <RouterLink/>
+
+        <section class="content">
+            <div class="beaches-list">
+                <div v-for="beach in getBeaches()" :key="beach.name" class="beach-card">
+                    {{ beach.name }}
+                </div>
+            </div>
         </section>
     </main>
 </template>
@@ -83,6 +121,7 @@ main {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    display: flex;
 }
 
 .sidebar {
@@ -96,6 +135,14 @@ main {
     color: #fff;
 }
 
+header {
+    font-family: 'Petrona', serif;
+}
+
+header span {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
 .sidebar ul {
     list-style: none;
     display: flex;
