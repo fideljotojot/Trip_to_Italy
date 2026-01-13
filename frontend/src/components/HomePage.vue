@@ -16,6 +16,8 @@ export default {
             selectedRegion: 'Amalfi Coast',
             selectedBeach: 'Faraglioni',
             selectedImage: faraglioniImg,
+            currentImageIndex: 0,
+            imageRotationInterval: null,
             regions: {
                 'Italy': [
                     {
@@ -84,6 +86,37 @@ export default {
             const beaches = this.getBeaches();
             const beach = beaches.find(b => b.name === this.selectedBeach);
             return beach ? beach.images : [];
+        },
+        startImageRotation() {
+            const images = this.getImages();
+            if (images.length <= 1) return;
+
+            if (this.imageRotationInterval) {
+                clearInterval(this.imageRotationInterval);
+            }
+
+            this.imageRotationInterval = setInterval(() => {
+                this.currentImageIndex = (this.currentImageIndex + 1) % images.length;
+                this.selectedImage = images[this.currentImageIndex];
+            }, 3000);
+        }
+    },
+    watch: {
+        selectedBeach() {
+            this.currentImageIndex = 0;
+            const images = this.getImages();
+            if (images.length > 0) {
+                this.selectedImage = images[0];
+                this.startImageRotation();
+            }
+        }
+    },
+    mounted() {
+        this.startImageRotation();
+    },
+    beforeUnmount() {
+        if (this.imageRotationInterval) {
+            clearInterval(this.imageRotationInterval);
         }
     }
 }
@@ -111,7 +144,7 @@ export default {
 
         <section class="content">
             <div class="beaches-list">
-                <div v-for="beach in getBeaches()" :key="beach.name" class="beach-card">
+                <div v-for="beach in getBeaches()" :key="beach.name" class="beach-card" @click="selectedBeach = beach.name; selectedImage = beach.images && beach.images.length > 0 ? beach.images[0] : null;">
                     {{ beach.name }}
                 </div>
             </div>
@@ -125,6 +158,7 @@ main {
     height: 100vh;
     overflow: hidden;
     display: flex;
+    transition: background-image 0.3 s ease-in-out;
 }
 
 .sidebar {
@@ -133,7 +167,7 @@ main {
     background-color: rgba(10, 61, 97, 0.41);
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
     padding: 1em 0;
     color: #fff;
 }
