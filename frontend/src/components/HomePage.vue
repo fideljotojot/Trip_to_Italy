@@ -210,4 +210,20 @@ header span {
     color: #FF6F61;
     border-left: 3px solid #ffddb6;
 }
+
+.content {
+    width: calc(100% - clamp(200px, 15%, 400px));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.beaches-list {
+    height: fit-content;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    gap: 1em;
+    background-color: #FF6F61;
+}
 </style>
