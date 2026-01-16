@@ -224,25 +224,28 @@ header span {
 }
 
 .beaches-list {
+    width:  calc(90% - clamp(200px, 15%, 400px));
     height: fit-content;
     position: absolute;
     bottom: 3%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 5em;
     background-color: rgba(10, 61, 98, 0.5);
-    padding: 1em;
+    padding: .2em;
 }
 
 .beach-card.active {
     color: #fff;
     font-size: 2em;
     font-family: 'Palatino Linotype', serif;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
 .beach-card {
     color: rgba(255, 111, 97, 1);
+    font-family: 'Palanquin Dark', sans-serif;
+    text-transform: uppercase;
 }
 </style>
