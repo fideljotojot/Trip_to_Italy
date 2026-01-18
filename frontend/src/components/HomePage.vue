@@ -156,7 +156,7 @@ export default {
                 :class="{ active: selectedBeach === beach.name }" 
                 @click="selectedBeach = beach.name; 
                 selectedImage = beach.images && beach.images.length > 0 ? beach.images[0] : null;">
-                    {{ beach.name }}
+                    <p>{{ beach.name }}</p>
                 </div>
             </div>
         </section>
@@ -238,7 +238,7 @@ header span {
     justify-content: center;
     align-items: center;
     gap: 5em;
-    background-color: rgba(10, 61, 98, 0.5);
+    background-color: rgba(10, 61, 98, 0.3);
     padding: .2em;
 }
 
@@ -253,5 +253,6 @@ header span {
     color: rgba(255, 111, 97, 1);
     font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 </style>
