@@ -21,6 +21,7 @@ export default {
             selectedRegion: 'Amalfi Coast',
             selectedBeach: 'Faraglioni',
             selectedImage: faraglioniImg,
+            previousImage: null,
             currentImageIndex: 0,
             imageRotationInterval: null,
             regions: {
@@ -103,6 +104,7 @@ export default {
 
             this.imageRotationInterval = setInterval(() => {
                 this.currentImageIndex = (this.currentImageIndex + 1) % images.length;
+                this.previousImage = this.selectedImage;
                 this.selectedImage = images[this.currentImageIndex];
             }, 3000);
         }
@@ -112,6 +114,7 @@ export default {
             this.currentImageIndex = 0;
             const images = this.getImages();
             if (images.length > 0) {
+                this.previousImage = this.selectedImage;
                 this.selectedImage = images[0];
                 this.startImageRotation();
             }
@@ -129,7 +132,9 @@ export default {
 </script>
 
 <template>
-    <main :style="{ backgroundImage: this.selectedImage ? `url('${this.selectedImage}')` : 'none', backgroundSize: 'cover', backgroundPosition: 'center' }">
+    <main>
+        <div class="background-image previous" v-if="previousImage" :style="{ backgroundImage: `url('${previousImage}')` }"></div>
+        <div class="background-image current" :style="{ backgroundImage: this.selectedImage ? `url('${this.selectedImage}')` : 'none' }" :key="selectedImage"></div>
         <section class="sidebar">
             <header>
                 <p>Welcome to Italy, dear</p> 
@@ -169,7 +174,36 @@ main {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    transition: background-image 0.3 s ease-in-out;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.background-image.previous {
+    z-index: -2;
+}
+
+.background-image.current {
+    z-index: -1;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .sidebar {
@@ -246,7 +280,6 @@ header span {
     color: #fff;
     font-size: 2em;
     font-family: 'Palatino Linotype', serif;
-    font-weight: bold;
 }
 
 .beach-card {
@@ -254,5 +287,6 @@ header span {
     font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 </style>
