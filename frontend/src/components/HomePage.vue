@@ -242,7 +242,6 @@ header span {
 }
 
 .sidebar ul li {
-    font-weight: bold;
     font-size: 1.25;
     cursor: pointer;
     padding: auto;
@@ -280,6 +279,8 @@ header span {
     color: #fff;
     font-size: 2em;
     font-family: 'Palatino Linotype', serif;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px #fff;
 }
 
 .beach-card {
@@ -287,6 +288,5 @@ header span {
     font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-weight: bold;
 }
 </style>
