@@ -96,11 +96,12 @@ export default {
         },
         startImageRotation() {
             const images = this.getImages();
-            if (images.length <= 1) return;
-
             if (this.imageRotationInterval) {
                 clearInterval(this.imageRotationInterval);
+                this.imageRotationInterval = null;
             }
+
+            if (images.length <= 1) return;
 
             this.imageRotationInterval = setInterval(() => {
                 this.currentImageIndex = (this.currentImageIndex + 1) % images.length;
