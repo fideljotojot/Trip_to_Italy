@@ -7,9 +7,14 @@ import fiordoImg2 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/f
 import fiordoImg3 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/fiordo di Furore3.jpg'
 
 import tropeaImg from '@/assets/images/Italy/calabria/Vibo-Valentia.jpg'
+
+/* Liguria */
 import monterossoBeachImg from '@/assets/images/Italy/liguria/monterosso/Monterosso beach.jpg'
 import monterossoSunsetImg from '@/assets/images/Italy/liguria/monterosso/Monterosso-Al-Mare.jpg'
-import baiaSilenzioLiguriaImg from '@/assets/images/Italy/liguria/monterosso/Cinque-Terre-La-Spezia-Province.webp'
+import CinqueTerreImg from '@/assets/images/Italy/liguria/Cinque-Terre-La-Spezia-Province.webp'
+import baiaSunset from '@/assets/images/Italy/liguria/Bia/Baia_del_silenzio_.jpg'
+import baiaFront from '@/assets/images/Italy/liguria/Bia/baia.jpeg'
+
 import puntaProscuttoImg from '@/assets/images/Italy/puglia/Punta Prosciutto.jpg'
 import toreSantAndreaImg from '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg'
 
@@ -44,7 +49,8 @@ export default {
                         name: 'Liguria',
                         beaches: [
                             { name: 'Monterosso', images: [monterossoBeachImg, monterossoSunsetImg] },
-                            { name: 'Cinque Terre', images: [baiaSilenzioLiguriaImg] }
+                            { name: 'Cinque Terre', images: [CinqueTerreImg] },
+                            { name: 'Bia del Silezio', images: [baiaSunset, baiaFront]}
                         ]
                     },
                     {
@@ -223,7 +229,7 @@ header {
     flex-direction: column;
     font-family: 'Petrona', serif;
     font-size: 1.2em;
-    padding: 0 13%;
+    padding: 0 1.3em;
     align-items: flex-start;
 }
 
@@ -254,6 +260,11 @@ header span {
 .sidebar ul li.active {
     color: #FF6F61;
     border-left: 3px solid #ffddb6;
+}
+
+.sidebar ul li:hover,
+.beach-card:hover {
+    color: #b6b9ff
 }
 
 .content {
