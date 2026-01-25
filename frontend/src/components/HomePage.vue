@@ -6,6 +6,7 @@ import fiordoImg1 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/f
 import fiordoImg2 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/fiordo di Furore2.webp'
 import fiordoImg3 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/fiordo di Furore3.jpg'
 
+/* Calabria */
 import tropeaImg from '@/assets/images/Italy/calabria/Vibo-Valentia.jpg'
 
 /* Liguria */
@@ -15,7 +16,11 @@ import CinqueTerreImg from '@/assets/images/Italy/liguria/Cinque-Terre-La-Spezia
 import baiaSunset from '@/assets/images/Italy/liguria/Bia/Baia_del_silenzio_.jpg'
 import baiaFront from '@/assets/images/Italy/liguria/Bia/baia.jpeg'
 
+/* Puglia */
 import puntaProscuttoImg from '@/assets/images/Italy/puglia/Punta Prosciutto.jpg'
+import puntaProscuttoImg1 from '@/assets/images/Italy/puglia/Punta Prosciutto.webp'
+import puntaProscuttoImg2 from '@/assets/images/Italy/puglia/Punta Prosciutto (Porto Cesareo), lecce.webp'
+import puntaProscuttoImg3 from '@/assets/images/Italy/puglia/Punta Prosciutto (Porto Cesareo).jpg'
 import toreSantAndreaImg from '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg'
 
 export default {
@@ -56,7 +61,7 @@ export default {
                     {
                         name: 'Puglia',
                         beaches: [
-                            { name: 'Punta Prosciutto', images: [puntaProscuttoImg] },
+                            { name: 'Punta Prosciutto', images: [puntaProscuttoImg, puntaProscuttoImg1, puntaProscuttoImg2, puntaProscuttoImg3] },
                             { name: 'Torre Sant\'Andrea', images: [toreSantAndreaImg] }
                         ]
                     },
@@ -262,7 +267,7 @@ header span {
     border-left: 3px solid #ffddb6;
 }
 
-.sidebar ul li:hover,
+.sidebar ul li:hover:not(.active),
 .beach-card:hover {
     color: #b6b9ff
 }
