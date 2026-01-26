@@ -29,6 +29,10 @@ import toreSantAndreaImg from '@/assets/images/Italy/puglia/Torre-Sant-Andrea-ne
 /* Sicily */
 
 /* Toscana */
+import calaViolinaImg from '@/assets/images/Italy/toscana/Cala Violina, Scarlino – Toscana.webp'
+import fenigliaImg from '@/assets/images/Italy/toscana/Spiaggia della Feniglia, Orbetello – Toscana.webp'
+import arenellaImg from '@/assets/images/Italy/toscana/Spiaggia dell’Arenella, Isola del Giglio.webp'
+
 export default {
     data() {
         return {
@@ -88,8 +92,9 @@ export default {
                     {
                         name: 'Toscana',
                         beaches: [
-                            { name: 'Follonica', images: [puntaProscuttoImg] },
-                            { name: 'Marina di Grosseto', images: [toreSantAndreaImg] }
+                            { name: 'Cala Violina', images: [calaViolinaImg] },
+                            { name: 'Spiaggia della Feniglia', images: [fenigliaImg] },
+                            { name: 'Spiaggia dell\'Arenella', images: [arenellaImg] }
                         ]
                     }
                 ]
