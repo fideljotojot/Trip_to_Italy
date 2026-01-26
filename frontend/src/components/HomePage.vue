@@ -23,6 +23,12 @@ import puntaProscuttoImg2 from '@/assets/images/Italy/puglia/Punta Prosciutto (P
 import puntaProscuttoImg3 from '@/assets/images/Italy/puglia/Punta Prosciutto (Porto Cesareo).jpg'
 import toreSantAndreaImg from '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg'
 
+/* Sardania */
+
+
+/* Sicily */
+
+/* Toscana */
 export default {
     data() {
         return {
