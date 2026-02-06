@@ -24,9 +24,54 @@ import puntaProscuttoImg3 from '@/assets/images/Italy/puglia/Punta Prosciutto (P
 import toreSantAndreaImg from '@/assets/images/Italy/puglia/Torre-Sant-Andrea-near-Melendugno-Lecce-district-Apulia-Italy.jpg'
 
 /* Sardania */
+import calaGoloritzèImg from '@/assets/images/Italy/sardinia/Cala Goloritzè (Baunei), Ogliastra.jpg'
+import calaGoloritzèImg2 from '@/assets/images/Italy/sardinia/Cala Goloritzè (Baunei).jpg'
+import calaGoloritzèImg3 from '@/assets/images/Italy/sardinia/Cala Goloritzè 1.jpg'
+import calaGoloritzèImg4 from '@/assets/images/Italy/sardinia/Cala Goloritzè.jpg'
+import calaLunaImg from '@/assets/images/Italy/sardinia/Cala Luna (Golfo di Orosei), Nuoro.webp'
+import calaLunaImg1 from '@/assets/images/Italy/sardinia/Cala-Luna.jpg'
+import calaLunaImg2 from '@/assets/images/Italy/sardinia/cala-luna-pixa-sardinia.jpg'
+import calaLunaImg3 from '@/assets/images/Italy/sardinia/near-cala-luna-flickr-vasile-cotovanu.jpg'
+
+import calaMarioluImg1 from '@/assets/images/Italy/sardinia/calamariolu.jpg'
+import calaMarioluImg2 from '@/assets/images/Italy/sardinia/calamariolu1.jpg'
+import calaMarioluImg3 from '@/assets/images/Italy/sardinia/calamariolu2.jpg'
+import calaMarioluImg4 from '@/assets/images/Italy/sardinia/calamariolu3.jpg'
+import calaMarioluImg5 from '@/assets/images/Italy/sardinia/calamariolu4.jpg'
+import calaMarioluImg6 from '@/assets/images/Italy/sardinia/calamariolu5.jpg'
+import calaMarioluImg7 from '@/assets/images/Italy/sardinia/calamariolu6.jpg'
+
+import isAruttasImg1 from '@/assets/images/Italy/sardinia/Is Aruttas.jpg'
+import isAruttasImg2 from '@/assets/images/Italy/sardinia/Is Aruttas1.jpg'
+import isAruttasImg3 from '@/assets/images/Italy/sardinia/Is Aruttas2.jpg'
+import isAruttasImg4 from '@/assets/images/Italy/sardinia/Is Aruttas3.jpg'
+import isAruttasImg5 from '@/assets/images/Italy/sardinia/Is Aruttas4.jpg'
+
+import laPelosaImg1 from '@/assets/images/Italy/sardinia/La Pelosa.webp'
+import laPelosaImg2 from '@/assets/images/Italy/sardinia/La-Pelosa-tower-in-Stintino-Sardinia-Italy.webp'
+import laPelosaImg3 from '@/assets/images/Italy/sardinia/Fantastic-blooming-flowers-on-Famous-La-Pelosa-beach-with-Torre-della-Pelosa.webp'
+import laPelosaImg4 from '@/assets/images/Italy/sardinia/Stintino-La-Pelosa-beach.webp'
+
+import portoGiuncoImg1 from '@/assets/images/Italy/sardinia/Porto Giunco.jpg'
+import portoGiuncoImg2 from '@/assets/images/Italy/sardinia/Porto Giunco1.jpg'
+import portoGiuncoImg3 from '@/assets/images/Italy/sardinia/Porto Giunco2.jpg'
+import portoGiuncoImg4 from '@/assets/images/Italy/sardinia/Porto Giunco3.jpg'
+
+import suGiudeuImg1 from '@/assets/images/Italy/sardinia/Su Giudeu.jpg'
+import suGiudeuImg2 from '@/assets/images/Italy/sardinia/Su Giudeu1.jpg'
+import suGiudeuImg3 from '@/assets/images/Italy/sardinia/Su Giudeu2.jpg'
+import suGiudeuImg4 from '@/assets/images/Italy/sardinia/Su Giudeu3.jpg'
+import suGiudeuImg5 from '@/assets/images/Italy/sardinia/Su Giudeu4.jpg'
 
 
 /* Sicily */
+import calaRossaImg from '@/assets/images/Italy/sicilia/Cala-Rossa-Favignana-Egadi-Sicilia_02.webp'
+import isolaBellaImg from '@/assets/images/Italy/sicilia/Isola bella, Taormina – Sicilia.webp'
+import plemmirioImg from '@/assets/images/Italy/sicilia/Marina-Protetta-del-Plemmirio-Siracusa-_02.webp'
+import scalaDeiTurchiImg from '@/assets/images/Italy/sicilia/Scala-dei-Turchi-Realmonte-Sicilia_01.webp'
+import spiaggiaDeiConigliImg from '@/assets/images/Italy/sicilia/Spiaggia-dei-Conigli-Lampedusa.webp'
+import sanVitoImg from '@/assets/images/Italy/sicilia/Spiaggia-di-San-Vito-San-Vito-lo-Capo-Trapani.webp'
+import tonnarellaUzzoImg from '@/assets/images/Italy/sicilia/Tonnarella-dellUzzo-Riserva-dello-Zingaro-Trapani-Sicilia_01.webp'
 
 /* Toscana */
 import calaViolinaImg from '@/assets/images/Italy/toscana/Cala Violina, Scarlino – Toscana.webp'
@@ -78,15 +123,25 @@ export default {
                     {
                         name: 'Sardania',
                         beaches: [
-                            { name: 'Punta Prosciutto', images: [puntaProscuttoImg] },
-                            { name: 'Baia del Silenzio', images: [toreSantAndreaImg] }
+                            { name: 'Cala Goloritzè', images: [calaGoloritzèImg, calaGoloritzèImg2, calaGoloritzèImg3, calaGoloritzèImg4] },
+                            { name: 'Cala Luna', images: [calaLunaImg, calaLunaImg1, calaLunaImg2, calaLunaImg3] },
+                            { name: 'Cala Mariolu', images: [ calaMarioluImg1, calaMarioluImg2, calaMarioluImg3, calaMarioluImg4, calaMarioluImg5, calaMarioluImg6, calaMarioluImg7] },
+                            { name: 'Is Aruttas', images: [ isAruttasImg1, isAruttasImg2, isAruttasImg3, isAruttasImg4, isAruttasImg5] },
+                            { name: 'La Pelosa', images: [ laPelosaImg1, laPelosaImg2, laPelosaImg3, laPelosaImg4] },
+                            { name: 'Porto Giunco', images: [ portoGiuncoImg1, portoGiuncoImg2, portoGiuncoImg3, portoGiuncoImg4] },
+                            { name: 'Su Giudeu', images: [ suGiudeuImg1, suGiudeuImg2, suGiudeuImg3, suGiudeuImg4, suGiudeuImg5] }
                         ]
                     },
                     {
                         name: 'Sicilia',
                         beaches: [
-                            { name: 'Mondello', images: [puntaProscuttoImg] },
-                            { name: 'Mondello Sunset', images: [toreSantAndreaImg] }
+                            { name: 'Cala Rossa', images: [calaRossaImg] },
+                            { name: 'Isola Bella', images: [isolaBellaImg] },
+                            { name: 'Plemmirio', images: [plemmirioImg] },
+                            { name: 'Scala dei Turchi', images: [scalaDeiTurchiImg] },
+                            { name: 'Spiaggia dei Conigli', images: [spiaggiaDeiConigliImg] },
+                            { name: 'San Vito Lo Capo', images: [sanVitoImg] },
+                            { name: 'Tonnarella dell\'Uzzo', images: [tonnarellaUzzoImg] }
                         ]
                     },
                     {
@@ -170,7 +225,7 @@ export default {
                 selectedBeach = region.beaches && region.beaches.length > 0 ? region.beaches[0].name : null; 
                 selectedImage = region.beaches && region.beaches.length > 0 && region.beaches[0].images && region.beaches[0].images.length > 0 
                             ? region.beaches[0].images[0] : null;" 
-                :class="{ active: selectedRegion === region.name }">
+                :class="{ active: selectedRegion === region.name,}">
                     {{ region.name }}
                 </li>
             </ul>
@@ -178,10 +233,10 @@ export default {
 
         <section class="content">
             <div class="beaches-list">
-                <div v-for="beach in getBeaches()" 
+                <div v-for="(beach, index) in getBeaches()" 
                 :key="beach.name" 
                 class="beach-card"
-                :class="{ active: selectedBeach === beach.name }" 
+                :class="{ active: selectedBeach === beach.name, 'many-beaches': getBeaches().length > 4, 'index-gt-4': index > 4  }" 
                 @click="selectedBeach = beach.name; 
                 selectedImage = beach.images && beach.images.length > 0 ? beach.images[0] : null;">
                     <p>{{ beach.name }}</p>
@@ -298,7 +353,6 @@ header span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5em;
     background-color: rgba(10, 61, 98, 0.3);
     padding: .2em;
 }
@@ -315,6 +369,17 @@ header span {
     color: rgba(255, 111, 97, 1);
     font-family: 'Palanquin Dark', sans-serif;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.999);
+    margin: 0 2em;
+}
+
+.many-beaches {
+    font-size: .9em;
+    margin: 0 .8em;
+}
+
+.many-beaches.active {
+    margin: 0 .6em;
+    font-size: 1.6em !important;
 }
 </style>
