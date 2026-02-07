@@ -7,7 +7,16 @@ import fiordoImg2 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/f
 import fiordoImg3 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/fiordo di Furore3.jpg'
 
 /* Calabria */
-import tropeaImg from '@/assets/images/Italy/calabria/Vibo-Valentia.jpg'
+import tropeaCapoVaticanoImg from '@/assets/images/Italy/calabria/Capo-Vaticano-Tropea-Italy-1024x767.jpg'
+import tropeaSantaMariaImg from '@/assets/images/Italy/calabria/Santa-Maria-dellIsola-Tropea-Italy-1024x783.jpeg'
+import tropeaThingsToDoImg from '@/assets/images/Italy/calabria/Things-to-Do-in-Tropea-Italy-814x1024.jpeg'
+import tropeaItalyImg from '@/assets/images/Italy/calabria/Tropea-Italy-1-1024x683.jpg'
+import tropeaOldTownImg from '@/assets/images/Italy/calabria/Tropea-Italy-Old-Town-1024x768.jpeg'
+import tropeaImg from '@/assets/images/Italy/calabria/Tropea.jpg'
+import tropeaImg1 from '@/assets/images/Italy/calabria/Tropea1.jpg'
+import tropeaImg2 from '@/assets/images/Italy/calabria/Tropea2.jpg'
+import tropeaImg5 from '@/assets/images/Italy/calabria/Tropea5.jpg'
+import viboValentiaImg from '@/assets/images/Italy/calabria/Vibo-Valentia.jpg'
 
 /* Liguria */
 import monterossoBeachImg from '@/assets/images/Italy/liguria/monterosso/Monterosso beach.jpg'
@@ -102,7 +111,7 @@ export default {
                     {
                         name: 'Calabria',
                         beaches: [
-                            { name: 'Tropea', images: [tropeaImg] }
+                            { name: 'Tropea', images: [tropeaImg5, tropeaCapoVaticanoImg, tropeaSantaMariaImg, tropeaThingsToDoImg, tropeaItalyImg, tropeaOldTownImg, tropeaImg, tropeaImg1, tropeaImg2, viboValentiaImg] }
                         ]
                     },
                     {
