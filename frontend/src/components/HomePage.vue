@@ -85,7 +85,12 @@ import calaRossaImg7 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa
 import calaRossaImg8 from '@/assets/images/Italy/sicilia/italy-sicily-favignana-cala-rossa-beach-aerial-view-orig.jpg'
 import calaRossaImg9 from '@/assets/images/Italy/sicilia/italy-sicily-favignana-cala-rossa-beach-orig.jpg'
 
-import isolaBellaImg from '@/assets/images/Italy/sicilia/Isola bella, Taormina – Sicilia.webp'
+import isolaBellaImg from '@/assets/images/Italy/sicilia/Isola Bella/Isola Bella.jpg'
+import isolaBellaImg1 from '@/assets/images/Italy/sicilia/Isola Bella/Isola Bella1.jpg'
+import isolaBellaImg2 from '@/assets/images/Italy/sicilia/Isola Bella/Isola Bella2.jpg'
+import isolaBellaImg3 from '@/assets/images/Italy/sicilia/Isola Bella/Isola Bella3.jpg'
+import isolaBellaImg4 from '@/assets/images/Italy/sicilia/Isola Bella/Isola-Bella-Maggiore.jpg'
+
 import plemmirioImg from '@/assets/images/Italy/sicilia/Marina-Protetta-del-Plemmirio-Siracusa-_02.webp'
 import scalaDeiTurchiImg from '@/assets/images/Italy/sicilia/Scala-dei-Turchi-Realmonte-Sicilia_01.webp'
 import spiaggiaDeiConigliImg from '@/assets/images/Italy/sicilia/Spiaggia-dei-Conigli-Lampedusa.webp'
@@ -155,7 +160,7 @@ export default {
                         name: 'Sicilia',
                         beaches: [
                             { name: 'Cala Rossa', images: [calaRossaImg, calaRossaImg1, calaRossaImg2, calaRossaImg3, calaRossaImg4, calaRossaImg5, calaRossaImg6, calaRossaImg7, calaRossaImg8, calaRossaImg9] },
-                            { name: 'Isola Bella', images: [isolaBellaImg] },
+                            { name: 'Isola Bella', images: [isolaBellaImg, isolaBellaImg1, isolaBellaImg2, isolaBellaImg3, isolaBellaImg4] },
                             { name: 'Plemmirio', images: [plemmirioImg] },
                             { name: 'Scala dei Turchi', images: [scalaDeiTurchiImg] },
                             { name: 'Spiaggia dei Conigli', images: [spiaggiaDeiConigliImg] },
