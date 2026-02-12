@@ -102,8 +102,34 @@ import plemmirioImg6 from '@/assets/images/Italy/sicilia/Plemmirio/Litorale_oves
 import scalaDeiTurchiImg1 from '@/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi.jpg'
 import scalaDeiTurchiVid from '@/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi.mp4'
 
-import spiaggiaDeiConigliImg from '@/assets/images/Italy/sicilia/Spiaggia-dei-Conigli-Lampedusa.webp'
-import sanVitoImg from '@/assets/images/Italy/sicilia/Spiaggia-di-San-Vito-San-Vito-lo-Capo-Trapani.webp'
+import spiaggiaDeiConigliImg1 from '@/assets/images/Italy/sicilia/Spiaggia dei Conigli/spiaggia-dei-conigli (2).jpg'
+import spiaggiaDeiConigliImg2 from '@/assets/images/Italy/sicilia/Spiaggia dei Conigli/spiaggia-dei-conigli (4).jpg'
+import spiaggiaDeiConigliImg3 from '@/assets/images/Italy/sicilia/Spiaggia dei Conigli/spiaggia-dei-conigli (5).jpg'
+import spiaggiaDeiConigliImg4 from '@/assets/images/Italy/sicilia/Spiaggia dei Conigli/spiaggia-dei-conigli (6).jpg'
+import spiaggiaDeiConigliImg6 from '@/assets/images/Italy/sicilia/Spiaggia dei Conigli/spiaggia-dei-conigli (8).jpg'
+
+import sanVitoImg from '@/assets/images/Italy/sicilia/San Vito Lo Capo/20160823-120022-largejpg.jpg'
+import sanVitoImg1 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/b-b-tre-passi-dal-mare.jpg'
+import sanVitoImg2 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/buena-vida-catamarano.jpg'
+import sanVitoImg3 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/cala-tonnarella-dell.jpg'
+import sanVitoImg4 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/castelluzzo-frassino.jpg'
+import sanVitoImg5 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/faraglioni-scopello-e.jpg'
+import sanVitoImg6 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/img-20160826-161301-largejpg.jpg'
+import sanVitoImg7 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/img-20170808-wa0002-largejpg.jpg'
+import sanVitoImg8 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/img-20170918-121358-largejpg.jpg'
+import sanVitoImg9 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/p-20170813-124515-largejpg.jpg'
+import sanVitoImg10 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/panorama-dal-hotel-pocho.jpg'
+import sanVitoImg11 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/photo0jpg (1).jpg'
+import sanVitoImg12 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/photo0jpg.jpg'
+import sanVitoImg13 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/photo8jpg.jpg'
+import sanVitoImg14 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/riserva-dello-zingaro (1).jpg'
+import sanVitoImg15 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/riserva-dello-zingaro (2).jpg'
+import sanVitoImg16 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/riserva-dello-zingaro.jpg'
+import sanVitoImg17 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/san-vito-lo-capo (1).jpg'
+import sanVitoImg18 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/san-vito-lo-capo.jpg'
+import sanVitoImg19 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/the-beautiful-sicilian.jpg'
+import sanVitoImg21 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/villa-sauci.jpg'
+
 import tonnarellaUzzoImg from '@/assets/images/Italy/sicilia/Tonnarella-dellUzzo-Riserva-dello-Zingaro-Trapani-Sicilia_01.webp'
 
 /* Toscana */
@@ -173,8 +199,8 @@ export default {
                             { name: 'Isola Bella', images: [isolaBellaImg, isolaBellaImg1, isolaBellaImg2, isolaBellaImg3, isolaBellaImg4] },
                             { name: 'Plemmirio', images: [ plemmirioImg1, plemmirioImg2, plemmirioImg3, plemmirioImg4, plemmirioImg5, plemmirioImg6, plemmirioImg] },
                             { name: 'Scala dei Turchi', images: [ scalaDeiTurchiImg1, scalaDeiTurchiVid] },
-                            { name: 'Spiaggia dei Conigli', images: [spiaggiaDeiConigliImg] },
-                            { name: 'San Vito Lo Capo', images: [sanVitoImg] },
+                            { name: 'Spiaggia dei Conigli', images: [ spiaggiaDeiConigliImg1, spiaggiaDeiConigliImg2, spiaggiaDeiConigliImg3, spiaggiaDeiConigliImg4, spiaggiaDeiConigliImg6, ] },
+                            { name: 'San Vito Lo Capo', images: [sanVitoImg, sanVitoImg1, sanVitoImg2, sanVitoImg3, sanVitoImg4, sanVitoImg5, sanVitoImg6, sanVitoImg7, sanVitoImg8, sanVitoImg9, sanVitoImg10, sanVitoImg11, sanVitoImg12, sanVitoImg13, sanVitoImg14, sanVitoImg15, sanVitoImg16, sanVitoImg17, sanVitoImg18, sanVitoImg19, sanVitoImg21] },
                             { name: 'Tonnarella dell\'Uzzo', images: [tonnarellaUzzoImg] }
                         ]
                     },
