@@ -99,7 +99,9 @@ import plemmirioImg4 from '@/assets/images/Italy/sicilia/Plemmirio/Plemmirio-1.j
 import plemmirioImg5 from '@/assets/images/Italy/sicilia/Plemmirio/1024px-Capo_Murro_di_Porco_Plemmirio.jpg'
 import plemmirioImg6 from '@/assets/images/Italy/sicilia/Plemmirio/Litorale_ovest_del_Plemmirio_02.jpg'
 
-import scalaDeiTurchiImg from '@/assets/images/Italy/sicilia/Scala-dei-Turchi-Realmonte-Sicilia_01.webp'
+import scalaDeiTurchiImg1 from '@/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi.jpg'
+import scalaDeiTurchiVid from '@/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi.mp4'
+
 import spiaggiaDeiConigliImg from '@/assets/images/Italy/sicilia/Spiaggia-dei-Conigli-Lampedusa.webp'
 import sanVitoImg from '@/assets/images/Italy/sicilia/Spiaggia-di-San-Vito-San-Vito-lo-Capo-Trapani.webp'
 import tonnarellaUzzoImg from '@/assets/images/Italy/sicilia/Tonnarella-dellUzzo-Riserva-dello-Zingaro-Trapani-Sicilia_01.webp'
@@ -120,6 +122,7 @@ export default {
             previousImage: null,
             currentImageIndex: 0,
             imageRotationInterval: null,
+            rotationTimeout: null,
             regions: {
                 'Italy': [
                     {
@@ -169,7 +172,7 @@ export default {
                             { name: 'Cala Rossa', images: [calaRossaImg, calaRossaImg1, calaRossaImg2, calaRossaImg3, calaRossaImg4, calaRossaImg5, calaRossaImg6, calaRossaImg7, calaRossaImg8, calaRossaImg9] },
                             { name: 'Isola Bella', images: [isolaBellaImg, isolaBellaImg1, isolaBellaImg2, isolaBellaImg3, isolaBellaImg4] },
                             { name: 'Plemmirio', images: [ plemmirioImg1, plemmirioImg2, plemmirioImg3, plemmirioImg4, plemmirioImg5, plemmirioImg6, plemmirioImg] },
-                            { name: 'Scala dei Turchi', images: [scalaDeiTurchiImg] },
+                            { name: 'Scala dei Turchi', images: [ scalaDeiTurchiImg1, scalaDeiTurchiVid] },
                             { name: 'Spiaggia dei Conigli', images: [spiaggiaDeiConigliImg] },
                             { name: 'San Vito Lo Capo', images: [sanVitoImg] },
                             { name: 'Tonnarella dell\'Uzzo', images: [tonnarellaUzzoImg] }
@@ -202,20 +205,48 @@ export default {
             const beach = beaches.find(b => b.name === this.selectedBeach);
             return beach ? beach.images : [];
         },
-        startImageRotation() {
+        isVideo(mediaUrl) {
+            if (!mediaUrl) return false;
+            return /\.(mp4|webm|ogg|mov)$/i.test(mediaUrl);
+        },
+        scheduleNextMedia() {
             const images = this.getImages();
+            if (images.length <= 1) return;
+
+            const currentMedia = images[this.currentImageIndex];
+            const isCurrentVideo = this.isVideo(currentMedia);
+
+            if (isCurrentVideo) {
+                // For videos, we'll wait for the 'ended' event, no timeout needed
+                return;
+            } else {
+                // For images, wait 3 seconds
+                this.rotationTimeout = setTimeout(() => {
+                    this.advanceToNext();
+                }, 3000);
+            }
+        },
+        advanceToNext() {
+            const images = this.getImages();
+            this.currentImageIndex = (this.currentImageIndex + 1) % images.length;
+            this.previousImage = this.selectedImage;
+            this.selectedImage = images[this.currentImageIndex];
+            this.scheduleNextMedia();
+        },
+        startImageRotation() {
             if (this.imageRotationInterval) {
                 clearInterval(this.imageRotationInterval);
                 this.imageRotationInterval = null;
             }
+            if (this.rotationTimeout) {
+                clearTimeout(this.rotationTimeout);
+                this.rotationTimeout = null;
+            }
 
+            const images = this.getImages();
             if (images.length <= 1) return;
 
-            this.imageRotationInterval = setInterval(() => {
-                this.currentImageIndex = (this.currentImageIndex + 1) % images.length;
-                this.previousImage = this.selectedImage;
-                this.selectedImage = images[this.currentImageIndex];
-            }, 3000);
+            this.scheduleNextMedia();
         }
     },
     watch: {
@@ -236,14 +267,21 @@ export default {
         if (this.imageRotationInterval) {
             clearInterval(this.imageRotationInterval);
         }
+        if (this.rotationTimeout) {
+            clearTimeout(this.rotationTimeout);
+        }
     }
 }
 </script>
 
 <template>
     <main>
-        <div class="background-image previous" v-if="previousImage" :style="{ backgroundImage: `url('${previousImage}')` }"></div>
-        <div class="background-image current" :style="{ backgroundImage: this.selectedImage ? `url('${this.selectedImage}')` : 'none' }" :key="selectedImage"></div>
+        <div class="background-image previous" v-if="previousImage && !isVideo(previousImage)" :style="{ backgroundImage: `url('${previousImage}')` }"></div>
+        <video v-if="previousImage && isVideo(previousImage)" class="background-video previous" :src="previousImage" autoplay muted :key="previousImage"></video>
+        
+        <div class="background-image current" v-if="selectedImage && !isVideo(selectedImage)" :style="{ backgroundImage: `url('${selectedImage}')` }" :key="selectedImage"></div>
+        <video v-if="selectedImage && isVideo(selectedImage)" class="background-video current" :src="selectedImage" autoplay muted @ended="advanceToNext" :key="selectedImage"></video>
+        
         <section class="sidebar">
             <header>
                 <p>Welcome to Italy, dear</p> 
@@ -302,6 +340,25 @@ main {
 }
 
 .background-image.current {
+    z-index: -1;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background-video.previous {
+    z-index: -2;
+}
+
+.background-video.current {
     z-index: -1;
     animation: fadeIn 0.5s ease-in-out;
 }
