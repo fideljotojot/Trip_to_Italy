@@ -91,7 +91,14 @@ import isolaBellaImg2 from '@/assets/images/Italy/sicilia/Isola Bella/Isola Bell
 import isolaBellaImg3 from '@/assets/images/Italy/sicilia/Isola Bella/Isola Bella3.jpg'
 import isolaBellaImg4 from '@/assets/images/Italy/sicilia/Isola Bella/Isola-Bella-Maggiore.jpg'
 
-import plemmirioImg from '@/assets/images/Italy/sicilia/Marina-Protetta-del-Plemmirio-Siracusa-_02.webp'
+import plemmirioImg from '@/assets/images/Italy/sicilia/Plemmirio/Plemmirio.jpeg'
+import plemmirioImg1 from '@/assets/images/Italy/sicilia/Plemmirio/Plemmirio.webp'
+import plemmirioImg2 from '@/assets/images/Italy/sicilia/Plemmirio/Plemmirio1.webp'
+import plemmirioImg3 from '@/assets/images/Italy/sicilia/Plemmirio/Plemmirio2.webp'
+import plemmirioImg4 from '@/assets/images/Italy/sicilia/Plemmirio/Plemmirio-1.jpg'
+import plemmirioImg5 from '@/assets/images/Italy/sicilia/Plemmirio/1024px-Capo_Murro_di_Porco_Plemmirio.jpg'
+import plemmirioImg6 from '@/assets/images/Italy/sicilia/Plemmirio/Litorale_ovest_del_Plemmirio_02.jpg'
+
 import scalaDeiTurchiImg from '@/assets/images/Italy/sicilia/Scala-dei-Turchi-Realmonte-Sicilia_01.webp'
 import spiaggiaDeiConigliImg from '@/assets/images/Italy/sicilia/Spiaggia-dei-Conigli-Lampedusa.webp'
 import sanVitoImg from '@/assets/images/Italy/sicilia/Spiaggia-di-San-Vito-San-Vito-lo-Capo-Trapani.webp'
@@ -161,7 +168,7 @@ export default {
                         beaches: [
                             { name: 'Cala Rossa', images: [calaRossaImg, calaRossaImg1, calaRossaImg2, calaRossaImg3, calaRossaImg4, calaRossaImg5, calaRossaImg6, calaRossaImg7, calaRossaImg8, calaRossaImg9] },
                             { name: 'Isola Bella', images: [isolaBellaImg, isolaBellaImg1, isolaBellaImg2, isolaBellaImg3, isolaBellaImg4] },
-                            { name: 'Plemmirio', images: [plemmirioImg] },
+                            { name: 'Plemmirio', images: [ plemmirioImg1, plemmirioImg2, plemmirioImg3, plemmirioImg4, plemmirioImg5, plemmirioImg6, plemmirioImg] },
                             { name: 'Scala dei Turchi', images: [scalaDeiTurchiImg] },
                             { name: 'Spiaggia dei Conigli', images: [spiaggiaDeiConigliImg] },
                             { name: 'San Vito Lo Capo', images: [sanVitoImg] },
