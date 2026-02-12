@@ -233,7 +233,15 @@ export default {
         },
         isVideo(mediaUrl) {
             if (!mediaUrl) return false;
-            return /\.(mp4|webm|ogg|mov)$/i.test(mediaUrl);
+            return /\.(mp4|webm|ogg|mov)(\?.*)?$/i.test(mediaUrl);
+        },
+        handleVideoLoaded(event) {
+            if (!event || !event.target) return;
+            const video = event.target;
+            const playPromise = video.play();
+            if (playPromise && typeof playPromise.catch === 'function') {
+                playPromise.catch(() => {});
+            }
         },
         scheduleNextMedia() {
             const images = this.getImages();
@@ -303,10 +311,10 @@ export default {
 <template>
     <main>
         <div class="background-image previous" v-if="previousImage && !isVideo(previousImage)" :style="{ backgroundImage: `url('${previousImage}')` }"></div>
-        <video v-if="previousImage && isVideo(previousImage)" class="background-video previous" :src="previousImage" autoplay muted :key="previousImage"></video>
+        <video v-if="previousImage && isVideo(previousImage)" class="background-video previous" :src="previousImage" autoplay muted playsinline preload="metadata" :key="previousImage"></video>
         
         <div class="background-image current" v-if="selectedImage && !isVideo(selectedImage)" :style="{ backgroundImage: `url('${selectedImage}')` }" :key="selectedImage"></div>
-        <video v-if="selectedImage && isVideo(selectedImage)" class="background-video current" :src="selectedImage" autoplay muted @ended="advanceToNext" :key="selectedImage"></video>
+        <video v-if="selectedImage && isVideo(selectedImage)" class="background-video current" :src="selectedImage" autoplay muted playsinline preload="auto" @loadeddata="handleVideoLoaded" @ended="advanceToNext" :key="selectedImage"></video>
         
         <section class="sidebar">
             <header>
