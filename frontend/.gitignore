@@ -37,3 +37,4 @@ __screenshots__/
 
 # Media
 src/assets/**/*.mp4
+!src/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi vid.mp4
