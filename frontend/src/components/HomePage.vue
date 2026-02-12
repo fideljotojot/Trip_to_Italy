@@ -100,7 +100,7 @@ import plemmirioImg5 from '@/assets/images/Italy/sicilia/Plemmirio/1024px-Capo_M
 import plemmirioImg6 from '@/assets/images/Italy/sicilia/Plemmirio/Litorale_ovest_del_Plemmirio_02.jpg'
 
 import scalaDeiTurchiImg1 from '@/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi.jpg'
-import scalaDeiTurchiVid from '@/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi.mp4'
+import scalaDeiTurchiVid from '@/assets/images/Italy/sicilia/Scala dei Turchi/Scala dei Turchi vid.mp4'
 
 import spiaggiaDeiConigliImg1 from '@/assets/images/Italy/sicilia/Spiaggia dei Conigli/spiaggia-dei-conigli (2).jpg'
 import spiaggiaDeiConigliImg2 from '@/assets/images/Italy/sicilia/Spiaggia dei Conigli/spiaggia-dei-conigli (4).jpg'
