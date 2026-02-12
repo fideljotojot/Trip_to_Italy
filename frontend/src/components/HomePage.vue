@@ -74,7 +74,17 @@ import suGiudeuImg5 from '@/assets/images/Italy/sardinia/Su Giudeu4.jpg'
 
 
 /* Sicily */
-import calaRossaImg from '@/assets/images/Italy/sicilia/Cala-Rossa-Favignana-Egadi-Sicilia_02.webp'
+import calaRossaImg from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-orig.jpg'
+import calaRossaImg1 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-aerial-view-orig.jpg'
+import calaRossaImg2 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-caves-orig.jpg'
+import calaRossaImg3 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-cliffs-orig.jpg'
+import calaRossaImg4 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-pathway-orig.jpg'
+import calaRossaImg5 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-stones-orig.jpg'
+import calaRossaImg6 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-view-from-water-orig.jpg'
+import calaRossaImg7 from '@/assets/images/Italy/sicilia/italy-sicily-cala-rossa-beach-water-edge-orig.jpg'
+import calaRossaImg8 from '@/assets/images/Italy/sicilia/italy-sicily-favignana-cala-rossa-beach-aerial-view-orig.jpg'
+import calaRossaImg9 from '@/assets/images/Italy/sicilia/italy-sicily-favignana-cala-rossa-beach-orig.jpg'
+
 import isolaBellaImg from '@/assets/images/Italy/sicilia/Isola bella, Taormina – Sicilia.webp'
 import plemmirioImg from '@/assets/images/Italy/sicilia/Marina-Protetta-del-Plemmirio-Siracusa-_02.webp'
 import scalaDeiTurchiImg from '@/assets/images/Italy/sicilia/Scala-dei-Turchi-Realmonte-Sicilia_01.webp'
@@ -144,7 +154,7 @@ export default {
                     {
                         name: 'Sicilia',
                         beaches: [
-                            { name: 'Cala Rossa', images: [calaRossaImg] },
+                            { name: 'Cala Rossa', images: [calaRossaImg, calaRossaImg1, calaRossaImg2, calaRossaImg3, calaRossaImg4, calaRossaImg5, calaRossaImg6, calaRossaImg7, calaRossaImg8, calaRossaImg9] },
                             { name: 'Isola Bella', images: [isolaBellaImg] },
                             { name: 'Plemmirio', images: [plemmirioImg] },
                             { name: 'Scala dei Turchi', images: [scalaDeiTurchiImg] },
