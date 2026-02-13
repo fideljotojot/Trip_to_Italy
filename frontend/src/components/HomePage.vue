@@ -1,7 +1,24 @@
 <script>
 /* Amalfi */
 import faraglioniImg from '@/assets/images/Italy/amalfi coast and campania/faraglioni.jpg'
+import faraglioniImg1 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/20180715-123504-largejpg.jpg'
+import faraglioniImg2 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/20180718-115834-2-largejpg.jpg'
+import faraglioniImg3 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/20180718-133039-2-largejpg.jpg'
+import faraglioniImg4 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/faraglioni-di-capri (1).jpg'
+import faraglioniImg5 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/faraglioni-di-capri.jpg'
+import faraglioniImg6 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/i-faraglioni.jpg'
+import faraglioniImg7 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/img-20180702-215251-795.jpg'
+import faraglioniImg8 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/photo0jpg (1).jpg'
+import faraglioniImg9 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/photo0jpg.jpg'
+import faraglioniImg10 from '@/assets/images/Italy/amalfi coast and campania/Faraglioni/photo2jpg.jpg'
 import marinaImg from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota.jpg'
+import marinaImg1 from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota/area-marina-protetta (1).jpg'
+import marinaImg2 from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota/area-marina-protetta.jpg'
+import marinaImg3 from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota/photo1jpg.jpg'
+import marinaImg4 from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota/photo6jpg.jpg'
+import marinaImg5 from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota/residence-torre-saracena.jpg'
+import marinaImg6 from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota/villaggio-residence-chalet (1).jpg'
+import marinaImg7 from '@/assets/images/Italy/amalfi coast and campania/Marina di Camerota/villaggio-residence-chalet.jpg'
 import fiordoImg1 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/fiordo di Furore.webp'
 import fiordoImg2 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/fiordo di Furore2.webp'
 import fiordoImg3 from '@/assets/images/Italy/amalfi coast and campania/Fiordo/fiordo di Furore3.jpg'
@@ -130,12 +147,47 @@ import sanVitoImg18 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/san-vit
 import sanVitoImg19 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/the-beautiful-sicilian.jpg'
 import sanVitoImg21 from '@/assets/images/Italy/sicilia/San Vito Lo Capo/villa-sauci.jpg'
 
-import tonnarellaUzzoImg from '@/assets/images/Italy/sicilia/Tonnarella-dellUzzo-Riserva-dello-Zingaro-Trapani-Sicilia_01.webp'
+import tonnarellaDellUzzoRiservaImg from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/cala-dell-uzzo-riserva.jpg'
+import tonnarellaDellUzzoImg from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/cala-dell-uzzo.jpg'
+import tonnarellaCalaTonnarellaImg from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/cala-tonnarella-dell.jpg'
+import tonnarellaCaptionImg1 from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/caption (1).jpg'
+import tonnarellaCaptionImg from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/caption.jpg'
+import tonnarellaFabBeachImg from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/fab-beach-it-s-the-best.jpg'
+import tonnarellaFrohUberImg from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/froh-uber-jeden-baum.jpg'
+import tonnarellaImg20180908 from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/img-20180908-114921773.jpg'
+import tonnarellaPhoto0Img from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/photo0jpg.jpg'
+import tonnarellaPhoto3Img from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/photo3jpg.jpg'
+import tonnarellaUberdachteImg from '@/assets/images/Italy/sicilia/Tonnarella dellUzzo/uberdachte-picknickplatze.jpg'
 
 /* Toscana */
-import calaViolinaImg from '@/assets/images/Italy/toscana/Cala Violina, Scarlino – Toscana.webp'
-import fenigliaImg from '@/assets/images/Italy/toscana/Spiaggia della Feniglia, Orbetello – Toscana.webp'
-import arenellaImg from '@/assets/images/Italy/toscana/Spiaggia dell’Arenella, Isola del Giglio.webp'
+import calaViolinaImg1 from '@/assets/images/Italy/toscana/Cala Violina/aeb4c054-f696-4418-a9a6-4ab6506ea6a3.jpg'
+import calaViolinaImg2 from '@/assets/images/Italy/toscana/Cala Violina/cala-violina2.webp'
+import calaViolinaImg3 from '@/assets/images/Italy/toscana/Cala Violina/d6f34a35-4c92-4c74-ab1e-5bde4026c365.jpg'
+import calaViolinaImg4 from '@/assets/images/Italy/toscana/Cala Violina/e1f22c4e-f008-4818-891d-549304fd7e4a.jpg'
+import calaViolinaImg5 from '@/assets/images/Italy/toscana/Cala Violina/e2745614-ec02-4a49-848e-a25d5f4d5631.jpg'
+import fenigliaImg1 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/delle-ville-sul-mare.jpg'
+import fenigliaImg2 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/il-mare-davanti-la-spiaggia.jpg'
+import fenigliaImg3 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/la-costa-della-feniglia.jpg'
+import fenigliaImg4 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/la-rva-del-mare-sulla.jpg'
+import fenigliaImg5 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/photo0jpg.jpg'
+import fenigliaImg6 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/spiaggia-della-feniglia (1).jpg'
+import fenigliaImg7 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/spiaggia-della-feniglia.jpg'
+import fenigliaImg8 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/una-delle-varie-entrate.jpg'
+import fenigliaImg9 from '@/assets/images/Italy/toscana/Spiaggia della Feniglia/uno-stabilimento-sulla.jpg'
+import arenellaImg1 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/01-cam-largejpg.jpg'
+import arenellaImg2 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/20200728-114001-largejpg.jpg'
+import arenellaImg3 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/arenella-vista-dalla.jpg'
+import arenellaImg4 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/giglio.jpg'
+import arenellaImg5 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/mare (1).jpg'
+import arenellaImg6 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/mare.jpg'
+import arenellaImg7 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/photo0jpg.jpg'
+import arenellaImg8 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/spiaggia-1.jpg'
+import arenellaImg9 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/spiaggia-2.jpg'
+import arenellaImg10 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/spiaggia-3.jpg'
+import arenellaImg11 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/spiaggia-4.jpg'
+import arenellaImg12 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/spiaggia-arenella (1).jpg'
+import arenellaImg13 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/spiaggia-arenella (2).jpg'
+import arenellaImg14 from '@/assets/images/Italy/toscana/Spiaggia dellArenella/spiaggia-arenella.jpg'
 
 export default {
     data() {
@@ -154,8 +206,8 @@ export default {
                     {
                         name: 'Amalfi Coast',
                         beaches: [
-                            { name: 'Faraglioni', images: [faraglioniImg] },
-                            { name: 'Marina di Camerota', images: [marinaImg] },
+                            { name: 'Faraglioni', images: [faraglioniImg, faraglioniImg1, faraglioniImg2, faraglioniImg3, faraglioniImg4, faraglioniImg5, faraglioniImg6, faraglioniImg7, faraglioniImg8, faraglioniImg9, faraglioniImg10] },
+                            { name: 'Marina di Camerota', images: [marinaImg7, marinaImg1, marinaImg2, marinaImg3, marinaImg4, marinaImg5, marinaImg6, marinaImg] },
                             { name: 'Fiordo di Ferore' , images: [fiordoImg1,fiordoImg2,fiordoImg3]}
                         ]
                     },
@@ -201,15 +253,15 @@ export default {
                             { name: 'Scala dei Turchi', images: [ scalaDeiTurchiImg1, scalaDeiTurchiVid] },
                             { name: 'Spiaggia dei Conigli', images: [ spiaggiaDeiConigliImg1, spiaggiaDeiConigliImg2, spiaggiaDeiConigliImg3, spiaggiaDeiConigliImg4, spiaggiaDeiConigliImg6, ] },
                             { name: 'San Vito Lo Capo', images: [sanVitoImg, sanVitoImg1, sanVitoImg2, sanVitoImg3, sanVitoImg4, sanVitoImg5, sanVitoImg6, sanVitoImg7, sanVitoImg8, sanVitoImg9, sanVitoImg10, sanVitoImg11, sanVitoImg12, sanVitoImg13, sanVitoImg14, sanVitoImg15, sanVitoImg16, sanVitoImg17, sanVitoImg18, sanVitoImg19, sanVitoImg21] },
-                            { name: 'Tonnarella dell\'Uzzo', images: [tonnarellaUzzoImg] }
+                            { name: 'Tonnarella dell\'Uzzo', images: [tonnarellaDellUzzoRiservaImg, tonnarellaDellUzzoImg, tonnarellaCalaTonnarellaImg, tonnarellaCaptionImg1, tonnarellaCaptionImg, tonnarellaFabBeachImg, tonnarellaFrohUberImg, tonnarellaImg20180908, tonnarellaPhoto0Img, tonnarellaPhoto3Img, tonnarellaUberdachteImg] }
                         ]
                     },
                     {
                         name: 'Toscana',
                         beaches: [
-                            { name: 'Cala Violina', images: [calaViolinaImg] },
-                            { name: 'Spiaggia della Feniglia', images: [fenigliaImg] },
-                            { name: 'Spiaggia dell\'Arenella', images: [arenellaImg] }
+                            { name: 'Cala Violina', images: [calaViolinaImg1, calaViolinaImg2, calaViolinaImg3, calaViolinaImg4, calaViolinaImg5] },
+                            { name: 'Spiaggia della Feniglia', images: [fenigliaImg1, fenigliaImg2, fenigliaImg3, fenigliaImg4, fenigliaImg5, fenigliaImg6, fenigliaImg7, fenigliaImg8, fenigliaImg9] },
+                            { name: 'Spiaggia dell\'Arenella', images: [arenellaImg1, arenellaImg2, arenellaImg3, arenellaImg4, arenellaImg5, arenellaImg6, arenellaImg7, arenellaImg8, arenellaImg9, arenellaImg10, arenellaImg11, arenellaImg12, arenellaImg13, arenellaImg14] }
                         ]
                     }
                 ]
